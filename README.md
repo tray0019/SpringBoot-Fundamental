@@ -30,6 +30,12 @@ Spring Bean:
 @Autowired 
 - Inject a spring bean into another class automatically
 
+@PathVariable
+- Binds a value from the URL path to a method parameter.
+
+@RequestsBody
+- Binds the entire HTTP request body (usually JSON) to a java object.
+
 Automatic main Application.java created
 
 
