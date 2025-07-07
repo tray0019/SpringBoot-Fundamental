@@ -10,8 +10,10 @@ Understanding SpringRESTful API
 # Step Took
 1. Created Spring Boot Maven project
 2. Created POJO class called Topic.  
-3. Created my TopicController for handling RESTFul API
-4. Created my Topic Service for business logic
+3. Added my TopicController class for handling RESTFul API
+4. Added my TopicService class for business logic
+5. Add business logic methods for TopicService class (CRUD)
+6. Added my TopicService and use Spring MVC annotations for HTTP request
 
 # Learned
 @RestController is a combination of:
@@ -24,6 +26,9 @@ Spring Bean:
 @Service annotation:
 - Registers the class as Spring bean(automatically managed)
 - Mark as part of service layer/business logic layer
+
+@Autowired 
+- Inject a spring bean into another class automatically
 
 Automatic main Application.java created
 
