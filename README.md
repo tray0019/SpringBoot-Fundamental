@@ -24,6 +24,7 @@ Result: RESTful API tested on browser and Postman and both succesfully worked!
 8. Added JPA annotation for my Topic class
 9. Added TopicRepository interface that extends JpaRepository
 10. In my TopicService I have added my TopicRepository instance field with @Autowired annotations
+11. Updated TopicService method using topicRepositroy method. 
 
 
 ## Learned
