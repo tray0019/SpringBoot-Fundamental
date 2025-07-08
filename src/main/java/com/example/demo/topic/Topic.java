@@ -5,13 +5,18 @@
  */
 package com.example.demo.topic;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 /*
  * POJO - Plain Old Java Object
  * This is my [Data Model] class representing Topics for
  * language and framework 
  */
+@Entity
 public class Topic {
 
+	@Id
 	private String id;
 	private String name;
 	private String description;

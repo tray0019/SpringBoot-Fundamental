@@ -19,7 +19,11 @@ Understanding SpringRESTful API
 Result: RESTful API tested on browser and Postman and both succesfully worked! 
 
 **Stage 2 - JPA & Derby**
+
 7. In POM.xml add the new Dependency for JPA and Derby
+8. Added JPA annotation for my Topic class
+9. Added TopicRepository interface that extends JpaRepository
+10. In my TopicService I have added my TopicRepository instance field with @Autowired annotations
 
 
 ## Learned
@@ -48,6 +52,9 @@ Result: RESTful API tested on browser and Postman and both succesfully worked!
 
 **Derby**
 - Test or fake database
+
+**JpaRepository<Topic, String>**
+- Topic here is the Class and the set to String because that's what the primary key data is set to
 
 Automatic main Application.java created
 
