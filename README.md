@@ -1,5 +1,5 @@
 # SpringBoot-RESTful-API
-Understanding SpringRESTful API
+Understand Spring boot fundamental. Learn and do Spring RESTful API and JPA.
 
 
 ## How to run
@@ -24,8 +24,11 @@ Result: RESTful API tested on browser and Postman and both succesfully worked!
 8. Added JPA annotation for my Topic class
 9. Added TopicRepository interface that extends JpaRepository
 10. In my TopicService I have added my TopicRepository instance field with @Autowired annotations
-11. Updated TopicService method using topicRepositroy method. 
+11. Updated TopicService method using topicRepository method. 
+12. Added an empty Topic constructor(for Jackson deserialization)
+13. In TopicController I Modified getTopic to generic Optional
 
+Result: JPA and RESTful api tested on browser and Postman both successfully worked! 
 
 ## Learned
 **@RestController** is a combination of:
@@ -55,6 +58,7 @@ Result: RESTful API tested on browser and Postman and both succesfully worked!
 - Test or fake database
 
 **JpaRepository<Topic, String>**
+- Extending JpaRepository for automatic JPA methods
 - Topic here is the Class and the set to String because that's what the primary key data is set to
 
 Automatic main Application.java created
