@@ -6,8 +6,11 @@
 ![Eclipse](https://img.shields.io/badge/IDE-Eclipse-purple)
 ![GitHub](https://img.shields.io/badge/Version_Control-GitHub-black)
 
-Understand Spring boot fundamental. Learn and do Spring RESTful API and JPA.
-This project takes in a Topic and Course Class. The topic class represent programming topic and course would be courses for the Topic. 
+This Spring Boot project demonstrates the fundamentals of Spring Boot, RESTful API development, and Spring Data JPA.
+- The Topic class represents programming topics (Java, Spring, Pythong etc.)
+- The Course class represents courses associated with a specific topic
+
+The project exposes RESTful endpoints for full CRUD operations on both entities and uses JPA for data persistence.
 
 ## How to run
 1. Clone the repository
