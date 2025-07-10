@@ -1,14 +1,13 @@
 # SpringBoot-RESTful-API
 Understand Spring boot fundamental. Learn and do Spring RESTful API and JPA.
 
-
 ## How to run
 1. Clone the repository
 2. Open in Java IDE
 3. Compile and run
 
 ## Step Took 
-**Stage 1 - RESTful API**
+**Step 1 - RESTful API**
 1. Created Spring Boot Maven project
 2. Created POJO class called Topic.  
 3. Added my TopicController class for handling RESTFul API
@@ -18,7 +17,7 @@ Understand Spring boot fundamental. Learn and do Spring RESTful API and JPA.
 
 Result: RESTful API tested on browser and Postman and both succesfully worked! 
 
-**Stage 2 - JPA & Derby**
+**Step 2 - JPA & Derby**
 
 7. In POM.xml add the new Dependency for JPA and Derby
 8. Added JPA annotation for my Topic class
@@ -29,6 +28,13 @@ Result: RESTful API tested on browser and Postman and both succesfully worked!
 13. In TopicController I Modified getTopic to generic Optional
 
 Result: JPA and RESTful api tested on browser and Postman both successfully worked! 
+
+**Step 3 - Course Class**
+
+14. Added Course classes; such as Course, CourseController, CourseRepository and CourseService. Courses class is a part of Topic.
+15. Added Topic field in Course class
+16. Set appropriate path variable or request mapping value in CourseController
+17. 
 
 ## Learned
 **@RestController** is a combination of:
@@ -62,7 +68,6 @@ Result: JPA and RESTful api tested on browser and Postman both successfully work
 - Topic here is the Class and the set to String because that's what the primary key data is set to
 
 Automatic main Application.java created
-
 
 ## Technologies
 - Java 21
