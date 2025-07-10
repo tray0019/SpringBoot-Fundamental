@@ -1,12 +1,13 @@
 # SpringBoot-RESTful-API
-Understand Spring boot fundamental. Learn and do Spring RESTful API and JPA.
-
-This project takes in a Topic and Course Class. The topic class represent programming topic and course would be courses for the Topic. 
 
 ![Java](https://img.shields.io/badge/Java-21-blue)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-2.7.5-brightgreen)
-![MySQL](https://img.shields.io/badge/Database-MySQL-orange)
-![Maven](https://img.shields.io/badge/Build-Maven-informational)
+![Derby](https://img.shields.io/badge/Database-Derby-lightgrey)
+![Eclipse](https://img.shields.io/badge/IDE-Eclipse-purple)
+![GitHub](https://img.shields.io/badge/Version_Control-GitHub-black)
+
+Understand Spring boot fundamental. Learn and do Spring RESTful API and JPA.
+This project takes in a Topic and Course Class. The topic class represent programming topic and course would be courses for the Topic. 
 
 ## How to run
 1. Clone the repository
