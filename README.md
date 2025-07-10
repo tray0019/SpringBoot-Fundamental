@@ -3,6 +3,11 @@ Understand Spring boot fundamental. Learn and do Spring RESTful API and JPA.
 
 This project takes in a Topic and Course Class. The topic class represent programming topic and course would be courses for the Topic. 
 
+![Java](https://img.shields.io/badge/Java-21-blue)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-2.7.5-brightgreen)
+![MySQL](https://img.shields.io/badge/Database-MySQL-orange)
+![Maven](https://img.shields.io/badge/Build-Maven-informational)
+
 ## How to run
 1. Clone the repository
 2. Open in Java IDE
