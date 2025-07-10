@@ -80,12 +80,6 @@ Result: Finally finish and all are working.
 
 Automatic main Application.java created
 
-## Technologies
-- Java 21
-- Git & GitHub
-- Eclipse
-- SpringBoot
-
 ## Get Request for Topic
 
 ![image](https://github.com/user-attachments/assets/2f46b1f6-06a9-408a-a437-95701ffa98d4)
