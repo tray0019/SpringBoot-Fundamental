@@ -50,7 +50,8 @@ public class CourseController {
 	}
 	
 	@PutMapping("/{id}")
-	public void update(@RequestBody Course course, @PathVariable String id) {
+	public void update(@RequestBody Course course,@PathVariable String topicId, @PathVariable String id) {
+		course.setTopic(new Topic(topicId, "",""));
 		courseService.updateCourse(id, course);
 	}
 	

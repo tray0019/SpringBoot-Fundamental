@@ -39,6 +39,8 @@ Result: JPA and RESTful api tested on browser and Postman both successfully work
 17. Added cardinalty annotation in Course Topic field
 18. In CourseController I use RequestMapping for better map path.
 
+Result: Finally finish and all are working.
+
 ## Learned
 **@RestController** is a combination of:
 - @Controller (makes it a Spring MVC)
