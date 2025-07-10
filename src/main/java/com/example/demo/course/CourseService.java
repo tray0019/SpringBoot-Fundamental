@@ -23,16 +23,10 @@ public class CourseService {
 	@Autowired
 	private CourseRepository courseRepository;
 	
-	/*
-	 * Find all Topic
-	 */
-	public List<Course> getAllTopic(){
-		return courseRepository.findAll();
+	public List<Course> getAllCourses(String topicId){
+		return courseRepository.findByTopicId(topicId);
 	}
 	
-	/*
-	 * Get topic by id
-	 */
 	public Optional<Course> getCourse(String id) {
 		return courseRepository.findById(id);
 	}
@@ -48,10 +42,5 @@ public class CourseService {
 	public void deleteCourse(String id) {
 		courseRepository.deleteById(id);
 	}
-	
-	
-	
-	
-	
 	
 }

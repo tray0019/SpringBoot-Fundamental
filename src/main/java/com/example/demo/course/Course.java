@@ -9,6 +9,7 @@ import com.example.demo.topic.Topic;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 /*
  * POJO - Plain Old Java Object
@@ -23,6 +24,7 @@ public class Course {
 	private String name;
 	private String description;
 	
+	@ManyToOne
 	private Topic topic;
 	
 	public Course() {

@@ -1,6 +1,8 @@
 # SpringBoot-RESTful-API
 Understand Spring boot fundamental. Learn and do Spring RESTful API and JPA.
 
+This project takes in a Topic and Course Class. The topic class represent programming topic and course would be courses for the Topic. 
+
 ## How to run
 1. Clone the repository
 2. Open in Java IDE
@@ -34,7 +36,8 @@ Result: JPA and RESTful api tested on browser and Postman both successfully work
 14. Added Course classes; such as Course, CourseController, CourseRepository and CourseService. Courses class is a part of Topic.
 15. Added Topic field in Course class
 16. Set appropriate path variable or request mapping value in CourseController
-17. 
+17. Added cardinalty annotation in Course Topic field
+18. In CourseController I use RequestMapping for better map path.
 
 ## Learned
 **@RestController** is a combination of:

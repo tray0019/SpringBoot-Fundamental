@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.topic.Topic;
@@ -26,33 +27,34 @@ import com.example.demo.topic.Topic;
  */
 
 @RestController 
+@RequestMapping("/topics/{topicId}/courses")
 public class CourseController {
 	
 	@Autowired
 	private CourseService courseService;
 	
-	@GetMapping("/topics/{id}/courses")
-	public List<Course> getAllCourses(@PathVariable String id){
-		return courseService.getAllTopic();
+	@GetMapping
+	public List<Course> getAllCourses(@PathVariable String topicId){
+		return courseService.getAllCourses(topicId);
 	}
 	
-	@GetMapping("/topics/{testID}/courses/{courseId}")
+	@GetMapping("/{courseId}")
 	public Optional<Course> getCourses(@PathVariable("courseId") String id){
 		return courseService.getCourse(id);
 	}
 	
-	@PostMapping("/topics/{topicId}/courses")
+	@PostMapping
 	public void addCourses(@RequestBody Course course, @PathVariable String topicId) {
 		course.setTopic(new Topic(topicId, "",""));
 		courseService.addCourse(course);
 	}
 	
-	@PutMapping("/topics/{topicId}/courses/{id}")
+	@PutMapping("/{id}")
 	public void update(@RequestBody Course course, @PathVariable String id) {
 		courseService.updateCourse(id, course);
 	}
 	
-	@DeleteMapping("/topics/{topicId}/courses/{id}")
+	@DeleteMapping("/{id}")
 	public void deleteCourses(@PathVariable String id) {
 		courseService.deleteCourse(id);
 	}
@@ -61,7 +63,6 @@ public class CourseController {
 
 
 /*
- * 
  * Spring Boot actions:
  * - Call my method
  * - Automatically convert the returned Java object to JSON
