@@ -80,9 +80,13 @@ Automatic main Application.java created
 - Eclipse
 - SpringBoot
 
-## Get Request
+## Get Request for Topic
 
 ![image](https://github.com/user-attachments/assets/2f46b1f6-06a9-408a-a437-95701ffa98d4)
+
+## Get Request for Topic and Course
+![image](https://github.com/user-attachments/assets/e76f18e5-7741-4630-98c3-f3b8218cb683)
+
 
 ##All Request work##
 
